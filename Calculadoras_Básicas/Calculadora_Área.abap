@@ -1,10 +1,10 @@
 SELECTION-SCREEN: BEGIN OF BLOCK bloco WITH FRAME TITLE text-001.
-  PARAMETERS: med1 TYPE p DECIMALS 2,
-              med2 TYPE p DECIMALS 2.
+  PARAMETERS: p_med1 TYPE p DECIMALS 2,
+              p_med2 TYPE p DECIMALS 2.
 SELECTION-SCREEN: END OF BLOCK bloco.
 
-DATA: tot TYPE p DECIMALS 2.
+DATA: v_tot TYPE p DECIMALS 2.
 
-tot = med1 * med2.
+v_tot = p_med1 * p_med2.
 
-WRITE: / 'A metragem Quadrada é',tot.
+WRITE: / 'A metragem Quadrada é',v_tot.
