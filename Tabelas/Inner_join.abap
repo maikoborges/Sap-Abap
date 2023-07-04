@@ -1,10 +1,3 @@
-*&---------------------------------------------------------------------*
-*& Report ZUDEMYEXER0027
-*&---------------------------------------------------------------------*
-*&
-*&---------------------------------------------------------------------*
-report zudemyexer0027.
-
 * Declaração de Tabela Transparente
 tables zt005.
 
@@ -40,7 +33,7 @@ start-of-selection.       " Evento de inicialização da rotina
 
 * Declaração das Rotinas nos Forms
 form selecao_dados .
-
+* Seleciona os registros do campo de ligação entre as tabelas, mas que conste em ambas
   select zt001~tpmat zt005~mater zt005~denom zt001~denom zt005~brgew zt005~ntgew zt005~gewei zt005~status
     from zt005
    inner join zt001                 " Associação das tabelas zt005 com a zt001
